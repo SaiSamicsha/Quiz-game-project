@@ -1,0 +1,43 @@
+print('Welcome to SSS Quiz Game')
+
+player = input('Do you want to start the game ?')
+
+if player.lower() != "yes":
+    quit()
+else:
+    print('Lets start the game')
+score = 0  # Score at starting of the game
+
+question = input("What is the national bird of india ?")
+
+if question.lower() == 'peacock':
+    print('You got the correct answer !!')
+    score += 1
+else:
+    print('you lost')
+
+question = input("What is the most abundant gas in the Earth's atmosphere?")
+
+if question.lower() == 'nitrogen':
+    print('You got the correct answer !!')
+    score += 1
+else:
+    print('you lost')
+
+question = input("Who is known as the Father of the Computer ?")
+
+if question.lower() == 'charles babbage':
+    print('You got the correct answer !!')
+    score += 1
+else:
+    print('you lost')
+    
+question = input("Which river is the longest in the world?")
+
+if question.lower() == 'nile river':
+    print('You got the correct answer !!')
+    score += 1
+else:
+    print('you lost')
+
+print("your final score " + str(score) )
